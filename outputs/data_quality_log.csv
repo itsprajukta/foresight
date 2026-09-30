@@ -1,0 +1,24 @@
+table,check,rows_affected,action,rationale
+sku_master,Duplicate SKU rows,0,Kept last occurrence,sku_id is the primary key; one row per SKU.
+sku_master,Unlabelled column 'wfr',50,Renamed to unit_cost (identity price - wfr = margin holds for 50/50 rows),The brief's dictionary expects unit_cost; the extract ships it under a cryptic name.
+sku_master,Unit cost above selling price (negative margin),16,Kept as-is and flagged (negative_margin=True),Could be a real pricing problem or a cost-data error - the client must confirm; we do not change prices (price optimisation is out of scope).
+sku_master,Category/subcategory labels inconsistent,30,"Kept; category used as the grouping level, subcategory flagged as unreliable","Pairs like Kitchen > Cushion or Storage > Sofa cannot both be right and we cannot tell which label is wrong, so we group by category only."
+sales_daily,Unparseable dates,0,Dropped,A sale without a date cannot be placed in time.
+sales_daily,Missing numeric values,0,units_sold missing -> row dropped; promo_flag missing -> 0; price missing -> SKU list price,The brief warned of gaps; checked every numeric column.
+sales_daily,"Duplicate (date, SKU) rows",0,Kept last occurrence,Grain is one row per SKU per day.
+sales_daily,Negative units,0,Clipped to 0,Returns are not modelled as negative demand.
+sales_daily,Revenue != units x price,0,Recomputed revenue,Keeps rupee figures consistent with units.
+sales_daily,SKUs not in sku_master,0,Dropped,Cannot attach cost or category to an unknown product.
+sales_daily,Sales dated before the SKU's launch_date,3393,Kept the sales; launch_date treated as unreliable (21 SKUs affected),"Pre-launch sales volumes look identical to post-launch ones, so the sales are real and the launch dates are wrong. Effective launch = first sale date."
+sales_daily,Rows in / rows out,36550,36550 rows kept,Summary of the table.
+calendar,Duplicate dates,0,Kept last,One row per date.
+calendar,Blank holiday / promotion_event cells,1379,Blank = no holiday / no event,"Blanks are structural (most days are ordinary), not missing data."
+calendar,Provided 'week' column is not a standard week number,731,Not used; weeks rebuilt as Monday-Sunday from the date,"Week 1 of 2025 has 5 days and week 1 of 2024 has 7, so it is not ISO-consistent."
+calendar,Sales promo_flag vs calendar promotion days,0,Checked - 100% of days agree,"Promotions are store-wide events on weekends of March, June, September and November in both years."
+calendar,Sales dates missing from calendar,0,None to fill,Every sales day needs calendar attributes.
+inventory_snapshots,"Duplicate (date, SKU) rows",0,Kept last,One position per SKU per snapshot.
+inventory_snapshots,SKUs with stock but no master data or sales,3600,Dropped (150 SKUs: SKU051-SKU200),No sales history or cost -> cannot forecast or value them. Client should confirm whether these are discontinued items or a separate catalogue.
+inventory_snapshots,Missing or negative stock values,0,Negatives clipped to 0,Stock cannot be negative.
+inventory_snapshots,Inventory_Value does not equal stock x unit cost,1152,Recomputed as on_hand_units x unit_cost,"The supplied value swings from 0.05x to 15x stock-at-cost, so it cannot be trusted for rupee impact."
+inventory_snapshots,Snapshots are monthly and do not roll forward from sales,24,Latest snapshot used as the current stock position; no roll-forward,"Month-to-month stock jumps are unrelated to sales, so projecting stock from sales would invent numbers. We score risk as of the latest snapshot date instead."
+sales_daily,Incomplete weeks at the edge of the data,150,Dropped from the weekly panel (week(s) starting 2025-12-29),A 3-day week would look like a demand collapse to the model.

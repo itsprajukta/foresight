@@ -1,0 +1,51 @@
+sku_id,product_name,category,quadrant,recommended_action,value_at_stake_inr,stockout_risk,overstock_risk,suggested_order_units,forecast_lead_time_units,forecast_horizon_units,stock_position_units,days_of_cover,sales_at_risk_inr,capital_locked_inr,on_hand_units,on_order_units,lead_time_days,safety_stock,reorder_point_supplied,unit_cost,list_price,negative_margin,forecast_reliability,stock_as_of
+SKU012,Product 012,Home Decor,Reorder now,Raise a replenishment order before stock runs out.,11007844.98,1.0,0.0,1270,276.3,1360.8,107,4.4,11007844.98,0.0,47,60,12,16,58,1256.89,8779.37,False,0.6770762941722301,2025-12-01
+SKU031,Product 031,Furniture,Reorder now,Raise a replenishment order before stock runs out.,7372920.88,1.0,0.0,874,209.2,978.9,133,7.6,7372920.88,0.0,93,40,13,28,113,6300.65,8715.93,False,0.9232740054100042,2025-12-01
+SKU017,Product 017,Home Decor,Reorder now,Raise a replenishment order before stock runs out.,5097239.09,1.0,0.0,710,148.6,722.3,121,9.4,5097239.09,0.0,95,26,12,108,274,6703.26,8477.32,False,1.0345627425570427,2025-12-01
+SKU040,Product 040,Storage,Reorder now,Raise a replenishment order before stock runs out.,1749171.9,1.0,0.0,750,125.8,809.8,96,6.6,1749171.9,0.0,67,29,9,36,93,5169.07,2450.56,True,0.9863572466483607,2025-12-01
+SKU034,Product 034,Lighting,Reorder now,Raise a replenishment order before stock runs out.,1369801.02,0.1532,0.0,937,91.4,1039.3,137,7.4,1369801.02,0.0,34,103,5,34,58,1333.43,1518.14,False,1.0189242366303475,2025-12-01
+SKU025,Product 025,Storage,Markdown / clear,Promote or discount to free up capital.,1149908.73,0.0,1.0,0,33.8,140.4,1185,472.6,0.0,1149908.73,1124,61,14,121,582,1333.08,11558.01,False,2.4449522949398825,2025-12-01
+SKU020,Product 020,Storage,Markdown / clear,Promote or discount to free up capital.,1080285.97,0.0,0.9999,0,35.1,711.8,1355,106.6,0.0,1080285.97,1002,353,3,129,227,6700.01,3897.54,True,0.9618147300527327,2025-12-01
+SKU023,Product 023,Kitchen,Reorder now,Raise a replenishment order before stock runs out.,765444.79,0.1912,0.0,582,155.6,749.3,209,15.6,765444.79,0.0,130,79,12,41,148,2484.54,1416.74,True,0.9979121366089575,2025-12-01
+SKU011,Product 011,Furniture,Markdown / clear,Promote or discount to free up capital.,744184.86,0.0,1.0,0,6.9,140.9,1022,406.1,0.0,744184.86,753,269,3,179,247,1718.4,1444.56,True,2.5227379169487696,2025-12-01
+SKU010,Product 010,Storage,Reorder now,Raise a replenishment order before stock runs out.,468645.47,0.9999,0.0,729,194.9,859.4,153,10.0,468645.47,0.0,83,70,13,22,60,3889.06,663.46,True,0.9263645064730308,2025-12-01
+SKU036,Product 036,Furniture,Markdown / clear,Promote or discount to free up capital.,317595.45,0.0,0.9786,0,12.0,247.5,518,117.2,0.0,317595.45,383,135,3,77,129,5430.12,5687.0,False,1.9226857475055932,2025-12-01
+SKU009,Product 009,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,63.3,544.2,164,16.9,888524.12,0.0,75,89,7,63,131,3121.06,2336.89,True,1.2107633258898651,2025-12-01
+SKU002,Product 002,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0076,0,26.2,523.9,555,59.3,0.0,0.0,526,29,3,94,149,3867.09,3805.69,True,1.1906191166951852,2025-12-01
+SKU001,Product 001,Furniture,Healthy,No action needed; leave as is.,0.0,0.0,0.0025,0,48.7,730.7,918,70.4,0.0,0.0,771,147,4,159,289,1758.45,3664.05,False,0.9539201726464543,2025-12-01
+SKU006,Product 006,Furniture,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,74.7,346.8,844,136.3,0.0,0.0,359,485,13,129,340,6021.91,8106.04,False,1.368274070172519,2025-12-01
+SKU003,Product 003,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.049,0,14.8,303.1,361,66.7,0.0,0.0,349,12,3,88,123,589.48,8078.23,False,1.383427664195093,2025-12-01
+SKU005,Product 005,Storage,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,86.4,875.8,762,48.7,1080567.51,0.0,471,291,6,129,245,5543.63,9493.22,False,0.9086786510899513,2025-12-01
+SKU004,Product 004,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0011,0,23.8,235.1,513,122.2,0.0,0.0,259,254,6,98,196,1445.74,6861.57,False,1.689549342413506,2025-12-01
+SKU018,Product 018,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,180.3,1311.7,337,14.4,5434272.87,0.0,235,102,8,66,184,5677.05,5575.41,True,0.6696400977694583,2025-12-01
+SKU016,Product 016,Furniture,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,133.6,699.8,442,35.4,558611.39,0.0,255,187,11,30,129,3637.93,2166.82,True,1.1698427915725167,2025-12-01
+SKU015,Product 015,Storage,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,31.8,204.9,432,118.0,0.0,0.0,187,245,9,119,265,5441.06,6212.12,False,1.7530163509137262,2025-12-01
+SKU014,Product 014,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,188.3,1106.8,643,32.5,1053201.55,0.0,309,334,10,130,299,2008.55,2270.75,False,0.8741466337948604,2025-12-01
+SKU013,Product 013,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,48.6,703.2,246,19.6,2632696.41,0.0,151,95,4,32,61,3936.71,5757.78,False,1.0156544224797412,2025-12-01
+SKU007,Product 007,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,169.1,1279.3,667,29.2,3131445.28,0.0,207,460,8,98,237,7748.2,5114.09,True,0.6803140073003796,2025-12-01
+SKU008,Product 008,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,43.4,838.5,480,32.1,3528992.81,0.0,325,155,3,91,161,2775.15,9842.64,False,1.0289274559527122,2025-12-01
+SKU021,Product 021,Furniture,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,67.2,439.8,185,23.6,1964634.0,0.0,88,97,9,36,88,6486.92,7711.28,False,1.2757447916947549,2025-12-01
+SKU026,Product 026,Furniture,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,99.2,1168.6,230,11.0,10268242.34,0.0,160,70,5,31,59,1799.29,10939.54,False,0.9532620581262716,2025-12-01
+SKU024,Product 024,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,160.3,667.8,359,30.1,546208.07,0.0,341,18,14,60,259,5539.34,1768.87,True,1.271231115714705,2025-12-01
+SKU027,Product 027,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,65.2,1287.7,670,29.1,5260965.12,0.0,567,103,3,83,133,307.06,8516.6,False,0.815939779370387,2025-12-01
+SKU028,Product 028,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,55.3,295.4,229,43.4,231505.13,0.0,174,55,11,114,337,6348.66,3484.09,True,1.3753506532877788,2025-12-01
+SKU030,Product 030,Storage,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,38.1,251.9,198,44.0,508433.98,0.0,166,32,9,43,104,5715.03,9433.51,False,1.5567944247221386,2025-12-01
+SKU029,Product 029,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,70.1,825.0,781,53.0,512816.56,0.0,261,520,5,196,329,5402.59,11642.45,False,0.9957072185820455,2025-12-01
+SKU022,Product 022,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,71.7,523.3,289,30.9,1077063.46,0.0,95,194,8,76,163,3252.96,4597.03,False,1.1697949325704327,2025-12-01
+SKU019,Product 019,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,199.2,832.4,341,22.9,2368382.34,0.0,227,114,14,25,126,2670.84,4819.85,False,0.9120788688308096,2025-12-01
+SKU033,Product 033,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,189.7,944.7,376,22.3,2023283.3,0.0,208,168,12,55,183,4657.74,3558.0,True,0.8977278868001414,2025-12-01
+SKU032,Product 032,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,87.7,477.5,492,57.7,0.0,0.0,278,214,11,60,185,3806.6,5612.59,False,1.531138240021838,2025-12-01
+SKU037,Product 037,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,176.2,1270.0,1042,45.9,626503.91,0.0,355,687,8,315,644,3901.0,2747.42,True,0.9217567712816929,2025-12-01
+SKU035,Product 035,Storage,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,153.6,1110.4,746,37.6,3961411.29,0.0,670,76,8,137,304,1137.61,10870.19,False,0.9365898583957228,2025-12-01
+SKU038,Product 038,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,81.4,398.7,469,65.9,0.0,0.0,159,310,12,56,175,4630.58,3949.1,True,1.3100043731677573,2025-12-01
+SKU039,Product 039,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,7.8,161.3,128,44.5,236766.68,0.0,93,35,3,17,31,6178.74,7118.95,False,1.8829972753460433,2025-12-01
+SKU041,Product 041,Furniture,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,38.7,574.5,480,46.8,977296.95,0.0,440,40,4,78,139,4540.24,10336.73,False,1.2502576337232598,2025-12-01
+SKU042,Product 042,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,121.6,1181.6,210,10.0,8937207.83,0.0,90,120,6,41,88,4583.86,9198.83,False,0.7432359811984522,2025-12-01
+SKU043,Product 043,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,237.9,1166.0,770,37.0,3463375.67,0.0,559,211,12,142,393,2605.61,8745.77,False,0.6736707596396164,2025-12-01
+SKU044,Product 044,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,41.3,498.1,262,29.5,1277930.32,0.0,223,39,5,55,93,488.84,5412.28,False,1.2135599694231363,2025-12-01
+SKU045,Product 045,Storage,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,90.0,1308.3,449,19.2,6596457.54,0.0,307,142,4,88,142,3634.56,7676.78,False,0.8857264147697735,2025-12-01
+SKU046,Product 046,Furniture,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,30.8,477.4,301,35.3,1266040.37,0.0,119,182,4,46,96,1913.03,7175.54,False,1.2921352798968992,2025-12-01
+SKU047,Product 047,Home Decor,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,112.9,754.7,330,24.5,3371452.06,0.0,201,129,9,44,99,3416.1,7938.22,False,0.8874436171585312,2025-12-01
+SKU048,Product 048,Kitchen,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,22.4,443.4,156,19.7,396415.78,0.0,106,50,3,22,31,6863.87,1379.55,True,1.53841912436265,2025-12-01
+SKU049,Product 049,Lighting,Healthy,No action needed; leave as is.,0.0,0.0,0.0,0,106.8,1293.9,1379,59.7,0.0,0.0,780,599,5,206,344,2063.03,5223.37,False,0.7415733241055622,2025-12-01
+SKU050,Product 050,Storage,Healthy,No action needed; leave as is.,0.0,0.0,0.034,0,75.4,312.3,853,153.0,0.0,0.0,328,525,14,69,316,701.85,882.72,False,1.5413108819038415,2025-12-01

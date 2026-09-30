@@ -1,0 +1,4 @@
+# Dashboard only (used by Streamlit Community Cloud, which reads the file next to the entry point)
+pandas==3.0.2
+plotly==7.1.0
+streamlit==1.64.0

@@ -1,0 +1,17 @@
+# Full environment: pipeline, model, dashboard, service, notebooks (Python 3.11)
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+lightgbm==4.7.0
+openpyxl==3.1.5
+matplotlib==3.10.9
+plotly==7.1.0
+streamlit==1.64.0
+fastapi==0.142.2
+uvicorn==0.46.0
+pydantic==2.13.3
+httpx==0.28.1
+nbformat==5.11.1
+nbconvert==7.17.1
+ipykernel==7.4.0
+pytest==9.1.1

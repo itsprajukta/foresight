@@ -1,0 +1,83 @@
+{
+  "yoy_weekly_avg_change_pct": -0.055185140944569167,
+  "weekly_units_min_max": [
+    3817.0,
+    6076.0
+  ],
+  "month_index": {
+    "Jan": 96.5,
+    "Feb": 105.9,
+    "Mar": 123.3,
+    "Apr": 114.5,
+    "May": 112.9,
+    "Jun": 115.7,
+    "Jul": 97.0,
+    "Aug": 89.2,
+    "Sep": 88.3,
+    "Oct": 79.2,
+    "Nov": 88.9,
+    "Dec": 88.7
+  },
+  "lift_pct": {
+    "Weekend (no promo)": 14.9,
+    "Promotion weekend vs normal weekend": 23.7,
+    "Public holiday vs average day": -13.2
+  },
+  "category_revenue_cr": {
+    "Lighting": 45.87,
+    "Kitchen": 56.35,
+    "Storage": 58.19,
+    "Furniture": 60.34,
+    "Home Decor": 88.85
+  },
+  "yoy_by_sku_pct": {
+    "min": -9.9,
+    "max": 7.6,
+    "top_up": {
+      "SKU011": 7.6,
+      "SKU042": 6.5,
+      "SKU039": 6.5,
+      "SKU002": 6.4,
+      "SKU030": 4.4
+    },
+    "top_down": {
+      "SKU015": -9.9,
+      "SKU017": -6.7,
+      "SKU048": -5.8,
+      "SKU044": -5.0,
+      "SKU045": -4.7
+    }
+  },
+  "top10_revenue_share_pct": 47.7,
+  "top10_skus": [
+    "SKU026",
+    "SKU035",
+    "SKU012",
+    "SKU042",
+    "SKU027",
+    "SKU045",
+    "SKU043",
+    "SKU029",
+    "SKU031",
+    "SKU008"
+  ],
+  "skus_for_80pct_revenue": 24,
+  "slow_stock_skus_over_90d": {
+    "SKU025": 508,
+    "SKU011": 319,
+    "SKU036": 96
+  },
+  "slow_stock_value_inr": 4872073.08,
+  "median_days_cover": 21.8,
+  "orphan_skus": 150,
+  "orphan_units_on_hand": 39985,
+  "orphan_value_supplied_inr": 174874618.36,
+  "stock_rollforward_within_20pct_share": 0.091,
+  "stock_rollforward_negative_share": 0.449,
+  "stock_change_vs_sales_corr": -0.013,
+  "negative_margin_skus": 16,
+  "negative_margin_revenue_share_pct": 16.7,
+  "negative_margin_gross_loss_inr": 303805963.86,
+  "price_volume_corr": 0.099,
+  "forecast_example_sku": "SKU012"
+}
