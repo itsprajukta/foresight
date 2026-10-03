@@ -364,10 +364,10 @@ Stack: Python · pandas · LightGBM · Streamlit · FastAPI<br>Data: Jan 2024 - 
 <figure><img class="nb" src="../figures/09_decision_grid.png" style="width:78%"><p class="cap">Decision grid: {q.get('Reorder now', 0)} reorder now, {q.get('Markdown / clear', 0)} markdown / clear, {q.get('Watch / volatile', 0)} watch / volatile, {q.get('Healthy', 0)} healthy.</p></figure>
 
 <h2 class="sec">7. Dashboard and scoring service</h2>
-<p>The dashboard gives the operations team four views: <b>action lists</b> (prioritised reorder and markdown tables with rupee values), <b>forecast vs actual</b> per SKU (history, past backtest forecasts, the 8-week forecast with its range, and a live check against weeks that have already happened), the <b>risk grid</b>, and a plain-language <b>how to read this</b> page. Filters for category, status and SKU sit in the sidebar. Empty filters show a clear message, and a missing pipeline run shows setup instructions.</p>
+<p>The dashboard opens with this month's decision in one sentence, followed by the four figures that matter. There are four views: <b>action lists</b> (prioritised reorder and markdown tables with rupee values and CSV download), <b>product detail</b>, the <b>risk map</b>, and <b>forecast accuracy</b>. Product detail shows forecast vs actual with the likely range, past backtest forecasts, an optional no-promotion forecast, and a <b>what-if panel</b> that re-scores risk live as stock or lead time changes. Clicking a table row or a bubble on the risk map opens that product. Category and status filters sit in one row at the top. Empty filters show a clear message, and a missing pipeline run shows setup instructions.</p>
 <figure><img src="../figures/dash_1_actions.png"><p class="cap">Action lists with headline KPIs.</p></figure>
-<figure><img src="../figures/dash_2_forecast.png"><p class="cap">Forecast vs actual for one SKU.</p></figure>
-<figure><img src="../figures/dash_3_grid.png"><p class="cap">Risk grid (interactive, with a tooltip per SKU).</p></figure>
+<figure><img src="../figures/dash_2_forecast.png"><p class="cap">Product detail: forecast vs actual and the what-if panel.</p></figure>
+<figure><img src="../figures/dash_3_grid.png"><p class="cap">Risk map: hover for details, click a bubble to open the product.</p></figure>
 <h3>Scoring service (FastAPI)</h3>
 <table><tr><th>Endpoint</th><th>Returns</th></tr>
 <tr><td><code>GET /health</code></td><td>status and number of SKUs loaded</td></tr>

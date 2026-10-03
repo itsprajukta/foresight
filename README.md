@@ -145,7 +145,18 @@ foresight/
   run_pipeline.py      one command, raw -> all outputs
 ```
 
-## 8. Scoring service (D6)
+## 8. Dashboard (D5)
+
+- **Filters:** category pills and a status switch (all, needs action, healthy) at the top. Every figure on the page follows them.
+- **Action lists:** prioritised reorder and markdown tables. Click any row to open that product. Each list downloads as CSV.
+- **Product detail:**
+  - forecast vs actual with the 80% range, past backtest forecasts and a forecast without promotions
+  - adjustable history window and range slider
+  - a **what-if panel**: change units on hand, on order, lead time or safety stock and the risk, action and rupees recalculate live, using the same rule as the pipeline
+- **Risk map:** every product on the stockout-vs-overstock grid. Click a bubble to open it.
+- **Forecast accuracy:** model vs baseline by test window or by weeks ahead, with a plain-language explanation of the flags.
+
+## 9. Scoring service (D6)
 
 | Endpoint | Purpose |
 |---|---|
@@ -165,14 +176,14 @@ Bad input doesn't crash the service:
 - negative, non-numeric or empty input returns **422** with a readable message
 - missing model outputs return **503** with instructions
 
-## 9. Deployment
+## 10. Deployment
 
 Both apps read the seeded outputs committed in `outputs/`. Re-run the pipeline and push to refresh them.
 
 - **Dashboard → Streamlit Community Cloud:** New app → this repo → main file `app/dashboard.py`. It installs `app/requirements.txt`.
 - **Scoring service → Render:** New → Blueprint → this repo. `render.yaml` builds from `service/requirements.txt` and runs `uvicorn service.main:app`. Health check: `/health`.
 
-## 10. Scope
+## 11. Scope
 
 Built exactly to the brief: D1–D7, weekly SKU forecast over a defined horizon, risk scoring, one pipeline, a dashboard, a scoring service and a readout.
 
@@ -184,4 +195,4 @@ Built exactly to the brief: D1–D7, weekly SKU forecast over a defined horizon,
 
 The optional stretch goals in 11.1 were not attempted.
 
-**Data governance:** the (simulated) client data is confidential. Keep this repository private and grant mentor access.
+**Repository visibility:** public, which Section 13 of the brief allows. The four raw extracts are simulated data and are included so anyone can re-run the pipeline end to end.
