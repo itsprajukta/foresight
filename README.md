@@ -2,8 +2,8 @@
 
 Weekly SKU-level demand forecasting and stockout / overstock early warning for **NorthBay Living**, a D2C home & lifestyle brand. Built as a Zidio Development data-science engagement.
 
-> **Live dashboard:** `<add Streamlit Community Cloud URL>`  
-> **Live scoring service:** `<add Render URL>` (interactive docs at `/docs`)
+**Live dashboard:** https://foresightfornorthbay.streamlit.app/  
+**Live scoring service:** https://foresight-scoring.onrender.com (interactive docs at [/docs](https://foresight-scoring.onrender.com/docs), health check at [/health](https://foresight-scoring.onrender.com/health))
 
 ---
 
